@@ -22,11 +22,11 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/', include('home.urls')),
-    path('lomas/', include('lomas.urls')),
-    path('lta/', include('lta.urls')),
-    path('process/', include('process.urls')),
-    path('', RedirectView.as_view(url='/home/', permanent=True)),
+    path('webd/lomas/', include('lomas.urls')),
+    path('webd/lta/', include('lta.urls')),
+    path('webd/process/', include('process.urls')),
+    path('webd/', include('home.urls')),
+    path('', RedirectView.as_view(url='/webd/', permanent=True)),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
