@@ -19,5 +19,7 @@ from django.conf.urls import url
 
 
 urlpatterns = [
+    url(r'runs$', views.runs, name='lta_runs'),
+    url(r'overdue$', views.overdue, name='lta_overdue'),
     url(r'^$', views.lta, name='lta'),
 ]

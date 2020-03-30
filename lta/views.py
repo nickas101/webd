@@ -22,3 +22,22 @@ def lta(request):
         context={'num_books': 5, 'num_instances': 7,
                  'num_instances_available': 6, 'num_authors': 4},
     )
+
+def runs(request):
+
+    return render(
+        request,
+        'lta_runs.html',
+        context={'num_books': 5, 'num_instances': 7,
+                 'num_instances_available': 6, 'num_authors': 4},
+    )
+
+
+def overdue(request):
+
+    return render(
+        request,
+        'lta_overdue.html',
+        context={'num_books': 5, 'num_instances': 7,
+                 'num_instances_available': 6, 'num_authors': 4},
+    )

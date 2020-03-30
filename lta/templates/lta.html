@@ -1,18 +1,21 @@
 {% extends "base_lta.html" %}
 
 {% block content %}
-<h1>LTA Home</h1>
 
-  <p>Welcome to <em>LocalLibrary</em>, a very basic Django website developed as a tutorial example on the Mozilla Developer Network.</p>
 
-<h2>Dynamic content</h2>
+{#<a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>#}
+{#<a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a>#}
+<div class="text-center m-5">
 
-  <p>The library has the following record counts:</p>
-  <ul>
-    <li><strong>Books:</strong> {{ num_books }}</li>
-    <li><strong>Copies:</strong> {{ num_instances }}</li>
-    <li><strong>Copies available:</strong> {{ num_instances_available }}</li>
-    <li><strong>Authors:</strong> {{ num_authors }}</li>
-  </ul>
+
+    <div class="col-md-4"></div>
+    <div class="col-md-4 text-center">
+    <h4>Long term ageing</h4>
+    <a href="/webd/lta/overdue" class="btn btn-outline-secondary btn-lg btn-block">Overdue crystals</a>
+        <a href="/webd/lta/runs" class="btn btn-outline-secondary btn-lg btn-block">LTA Runs</a>
+{#<button type="button" class="btn btn-outline-secondary btn-lg btn-block">Block level button</button>#}
+        </div>
+    <div class="col-md-4"></div>
+</div>
 
 {% endblock %}
