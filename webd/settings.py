@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'home.apps.HomeConfig',
     'lomas.apps.LomasConfig',
     'lta.apps.LtaConfig',
     'process.apps.ProcessConfig',
